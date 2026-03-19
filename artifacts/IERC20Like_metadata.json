@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/core/RoamOrder.sol": "IERC20Like"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/core/RoamOrder.sol": {
+			"keccak256": "0x7ca282040c7380a03c878f0ba3c6c470945d856a2a7266e6e2b3a8d80b510300",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9ffc7253f5dd9a55c9b5e1690edcabcb9314d78b3a7d766c24790852f3d9be26",
+				"dweb:/ipfs/QmcaCvvyLibBtMuTPuDG2YM9aB64GAfoTJvj5cnBsqVh3z"
+			]
+		}
+	},
+	"version": 1
+}
