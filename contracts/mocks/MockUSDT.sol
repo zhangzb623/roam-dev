@@ -31,6 +31,10 @@ contract MockUSDT {
         return true;
     }
 
+    /**
+        授权给usdt一定额度，才能进行转账，这里后续是调用RoamOrder.sol中的StakeUsdt方法
+        ，所以这个是用户来调用，传RoamOrder.sol的合约地址
+    */
     function approve(address spender, uint256 amount) external returns (bool) {
         require(spender != address(0), "zero address");
         allowance[msg.sender][spender] = amount;

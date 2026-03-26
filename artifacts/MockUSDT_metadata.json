@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.31+commit.fd3a2265"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -253,7 +253,11 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"approve(address,uint256)": {
+					"notice": "授权给usdt一定额度，才能进行转账，这里后续是调用RoamOrder.sol中的StakeUsdt方法 ，所以这个是用户来调用，传RoamOrder.sol的合约地址"
+				}
+			},
 			"version": 1
 		}
 	},
@@ -261,7 +265,7 @@
 		"compilationTarget": {
 			"contracts/mocks/MockUSDT.sol": "MockUSDT"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -274,11 +278,11 @@
 	},
 	"sources": {
 		"contracts/mocks/MockUSDT.sol": {
-			"keccak256": "0x292d4b1e2f6ec5f5b2c1817cf527dc66547dc6d90ccca34232979f9d4ef96886",
+			"keccak256": "0xb40816990ffb4e777406d713196dff1bd95e69b11e19d307fa702ea0ad05c076",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e068cd5fd2985d734876f1474b84df1c68f1b39068095ef12315902c6faa61c1",
-				"dweb:/ipfs/QmUU4rfNojna5EBvQVPJJ2CtLPu1FuWqv3tQDBtCNfUAJy"
+				"bzz-raw://fa5837e9b63ad54732ca591c18548b30cc4babccdbbf5486c93d13407a8e883b",
+				"dweb:/ipfs/QmbsP736Ci3RGqzpnPaHTA7bbyWRSjUUKRHivUzNetUFu4"
 			]
 		}
 	},
